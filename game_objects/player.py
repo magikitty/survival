@@ -7,6 +7,7 @@ class Player(object):
         action = input("Press 1 or 2: ")
         if action == "1":
             print("You roll")
+            return "roll"
         if action == "2":
             print("You hide")
-        return action
+            return "hide"

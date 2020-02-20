@@ -7,9 +7,5 @@ class Animal(object):
         self.attacks = ["stomp", "charge"]
     def get_attack_random(self):
         attack_random = random.choice(self.attacks)
-        print(attack_random)
+        print("Animal attacks with", attack_random)
         return attack_random
-
-
-moophant = Animal("Moophant")
-moophant.get_attack_random()
