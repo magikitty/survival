@@ -16,7 +16,7 @@ animal_1 = animal.Animal(constants.ANIMAL_1)
 
 def player_survives():
     action_animal = animal_1.get_attack_random()
-    action_player = player.set_action_player()
+    action_player = player.action()
 
     if dictionary.attack_response[action_animal] == action_player:
         player_survives = True
