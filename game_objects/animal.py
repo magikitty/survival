@@ -1,3 +1,4 @@
+import constants
 import random
 
 # Class for the mutant animal game object
@@ -7,5 +8,5 @@ class Animal(object):
         self.attacks = ["stomp", "charge"]
     def get_attack_random(self):
         attack_random = random.choice(self.attacks)
-        print("Animal attacks with", attack_random)
+        print(constants.MESSAGE_ANIMAL_ATTACK, attack_random)
         return attack_random
