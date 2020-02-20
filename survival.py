@@ -1,6 +1,7 @@
 # Import modules
 from game_objects import player
 from game_objects import animal
+import dictionary
 
 # Initialize game objects
 test_player = player.Player("Sally")
@@ -12,9 +13,7 @@ def player_survives():
     action_animal = moophant.get_attack_random()
     action_player = test_player.set_action_player()
 
-    if action_animal == "stomp" and action_player == "1":
-        player_survives = True
-    elif action_animal == "charge" and action_player == "2":
+    if dictionary.attack_response[action_animal] == action_player:
         player_survives = True
     else:
         player_survives = False
