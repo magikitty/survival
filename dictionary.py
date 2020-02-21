@@ -2,6 +2,6 @@ import constants
 
 # Dictionary with animal actions (key) and player response (value) that will surive the encounter
 attack_response = {
-    "stomp": constants.ACTION_1,
-    "charge": constants.ACTION_2
+    constants.ATTACK_1: constants.ACTION_1,
+    constants.ATTACK_2: constants.ACTION_2
     }
