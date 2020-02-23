@@ -1,4 +1,4 @@
-import constants
+from utilities import constants
 import random
 
 # Class for the mutant animal game object
