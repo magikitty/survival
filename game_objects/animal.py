@@ -1,5 +1,6 @@
-from utilities import constants
 import random
+import utilities.constants as constants
+
 
 # Class for the mutant animal game object
 class Animal(object):

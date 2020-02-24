@@ -1,23 +1,20 @@
 # Import modules
-from game_objects import animal
-from game_objects import player_setup
-import game_objects.player
-from utilities import constants
-from utilities import dictionary
+import game_objects.animal as animal
+import game_objects.player as player
+import game_objects.player_setup as player_setup
+import utilities.constants as constants
+import utilities.dictionary as dictionary
 
 
 
-# Initialize game objects
-# player = player.Player(character_name())
-# player_char = player.Player()
-# player_char.action("sally")
+# Initialize animal object
 animal_1 = animal.Animal(constants.ANIMAL_1, constants.ATTACK_1)
 
 
 # def player_survives():
 #     action_animal = animal_1.get_attack()
 #     print(constants.MESSAGE_ANIMAL_ATTACK, action_animal)
-#     # action_player = player.action()
+#     action_player = player.Player().actions
 
 #     if dictionary.attack_response[action_animal] == action_player:
 #         player_survives = True
@@ -28,10 +25,8 @@ animal_1 = animal.Animal(constants.ANIMAL_1, constants.ATTACK_1)
 #     return player_survives
 
 
-# player_survives()
-
-
 
 player_setup.setPlayerNameFromInput()
-print("player name is", game_objects.player.Player().name)
-print("player does", game_objects.player.Player().action)
+# player_survives()
+print("player name is", player.Player().name)
+print("player does", player.Player().actions[0])

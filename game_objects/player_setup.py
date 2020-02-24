@@ -1,5 +1,5 @@
-import utilities.constants
-import game_objects.player
+import utilities.constants as constants
+import game_objects.player as player
 
 
 # print given message, return player input
@@ -8,5 +8,5 @@ def playerInputFromMessage(message):
 
 
 def setPlayerNameFromInput():
-    name = playerInputFromMessage(utilities.constants.MESSAGE_ENTER_NAME)
-    game_objects.player.Player.name = name
+    name = playerInputFromMessage(constants.MESSAGE_ENTER_NAME)
+    player.Player.name = name

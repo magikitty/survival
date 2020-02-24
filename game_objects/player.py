@@ -1,9 +1,9 @@
-from utilities import constants
+import utilities.constants as constants
 
 # Class for the player game object
 class Player(object):
     name = ""
-    action = "defend"   # debugging
+    actions = [constants.ACTION_1, constants.ACTION_2]
 
 
 # TODO: move
