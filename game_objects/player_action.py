@@ -1,20 +1,18 @@
 import utilities.constants as constants
+import utilities.dictionary as dictionary
 
 
-def set_action_player(Player):
-    action = get_input_action()
-    if action == "1":
-        print(constants.MESSAGE_SET_ACTION, constants.ACTION_1)
-        return Player.actions[0]
-    if action == "2":
-        print(constants.MESSAGE_SET_ACTION, constants.ACTION_2)
-        return Player.actions[1]
-
-
-def get_input_action():
+def set_action_player(player_obj):
     print(constants.MENU_PLAYER_ACTIONS)
-    input_valid = False
-    while input_valid == False:
-        input_action = input(constants.MESSAGE_INPUT_ACTION)
-        if input_action == "1" or input_action == "2":
-            return input_action
+    while True:
+        action = check_dict_for_input(input(constants.MESSAGE_INPUT_ACTION))
+        if action != "":
+            print(constants.MESSAGE_SET_ACTION, action)
+            return action
+
+
+def check_dict_for_input(input_action):
+    if input_action in dictionary.player_input_action:
+        return dictionary.player_input_action[input_action]
+    else:
+        return ""
