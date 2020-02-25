@@ -12,6 +12,10 @@ MESSAGE_SET_ACTION = "You decide to"
 MESSAGE_WELCOME = "Welcome to a game of Survival! Try to survive the mutant animal encounters!\n"
 MESSAGE_ANOTHER_ANIMAL_APPROACHES = "But another animal approaches...\n"
 
+# Player input for actions
+PC_INPUT_1 = "1"
+PC_INPUT_2 = "2"
+
 # Player response actions
 ACTION_1 = "Roll"
 ACTION_2 = "Hide"
@@ -19,8 +23,8 @@ ACTION_2 = "Hide"
 # Player actions menu
 MENU_PLAYER_ACTIONS = (
     "\nPress the number of the response you want to take.\n" +
-    "1. " + ACTION_1 + "\n"
-    "2. " + ACTION_2
+    PC_INPUT_1 + " " + ACTION_1 + "\n" +
+    PC_INPUT_2 + " " + ACTION_2
 )
 
 # Mutant animal names
