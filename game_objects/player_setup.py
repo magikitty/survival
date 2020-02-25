@@ -2,6 +2,6 @@ import utilities.constants as constants
 import game_objects.player as player
 
 
-def setPlayerNameFromInput():
+def set_pc_name_from_input():
     name = input(constants.MESSAGE_ENTER_NAME)
     player.Player.name = name

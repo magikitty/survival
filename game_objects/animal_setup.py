@@ -6,6 +6,6 @@ list_animals = [constants.ANIMAL_1, constants.ANIMAL_2]   # debugging
 
 
 # Instantiates an Animal object with random name from list
-def getRandomAnimal():
+def get_random_animal():
     animal_random = animal.Animal(random.choice(list_animals))
     return animal_random
