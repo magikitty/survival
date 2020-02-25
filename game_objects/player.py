@@ -1,6 +1,7 @@
 import utilities.constants as constants
+import utilities.lists as lists
 
 # Class for the player game object
 class Player(object):
     name = ""
-    actions = [constants.ACTION_1, constants.ACTION_2]
+    actions = lists.pc_actions
