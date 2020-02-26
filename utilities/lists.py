@@ -1,5 +1,8 @@
 import utilities.constants as constants
 
-animal_attacks = [constants.ATTACK_1, constants.ATTACK_2]
+# Animal lists
+list_animals = [constants.ANIMAL_1, constants.ANIMAL_2, constants.ANIMAL_3]
+animal_attacks = [constants.ATTACK_1, constants.ATTACK_2, constants.ATTACK_3]
 
-pc_actions = [constants.ACTION_1, constants.ACTION_2]
+# PC lists
+pc_actions = [constants.ACTION_1, constants.ACTION_2, constants.ACTION_3]

@@ -6,6 +6,8 @@ MESSAGE_INPUT_ACTION = "What do you want to do? "
 MESSAGE_ANIMAL_ATTACK = "The mutant animal attacks with"
 MESSAGE_ENCOUNTER_ANIMAL_NAME = "approaches! You have encountered a mutant animal!"
 MESSAGE_GAME_OVER = "Game over!"
+MESSAGE_GREET_PC_1 = "Hello,"
+MESSAGE_GREET_PC_2 = "! Get ready to play!\n"
 MESSAGE_PLAYER_SURVIVED_TRUE = "You survived the mutant animal attack!\n"
 MESSAGE_PLAYER_SURVIVED_FALSE = "Oh no, you did not survive the mutant animal attack!\n"
 MESSAGE_SET_ACTION = "You decide to"
@@ -15,22 +17,27 @@ MESSAGE_ANOTHER_ANIMAL_APPROACHES = "But another animal approaches...\n"
 # Player input for actions
 PC_INPUT_1 = "1"
 PC_INPUT_2 = "2"
+PC_INPUT_3 = "3"
 
 # Player response actions
 ACTION_1 = "Roll"
 ACTION_2 = "Hide"
+ACTION_3 = "Jump"
 
 # Player actions menu
 MENU_PLAYER_ACTIONS = (
     "\nPress the number of the response you want to take.\n" +
-    PC_INPUT_1 + " " + ACTION_1 + "\n" +
-    PC_INPUT_2 + " " + ACTION_2
+    PC_INPUT_1 + ". " + ACTION_1 + "\n" +
+    PC_INPUT_2 + ". " + ACTION_2 + "\n" +
+    PC_INPUT_3 + ". " + ACTION_3
 )
 
 # Mutant animal names
 ANIMAL_1 = "Moophant"
 ANIMAL_2 = "Hipposaurus"
+ANIMAL_3 = "Wilderbeast"
 
 # Mutant animal attacks
 ATTACK_1 = "Charge"
 ATTACK_2 = "Stomp"
+ATTACK_3 = "Buck"

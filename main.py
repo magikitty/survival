@@ -7,12 +7,13 @@ import game_objects.player_setup as player_setup
 import utilities.constants as constants
 import utilities.dictionary as dictionary
 
+import json
 
 
 def welcome_pc():
     print(constants.MESSAGE_WELCOME)
     player_setup.set_pc_name_from_input()
-    print("Hello,", player.Player().name + "! Get ready to play!\n")
+    print(constants.MESSAGE_GREET_PC_1, player.Player().name + constants.MESSAGE_GREET_PC_2)
 
 
 def game_loop():
@@ -50,8 +51,3 @@ def pc_survives_encounter(animal_encountered):
 
 welcome_pc()
 game_loop()
-
-
-
-welcomePlayer()
-gameLoop()
