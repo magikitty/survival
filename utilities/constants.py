@@ -18,26 +18,34 @@ MESSAGE_ANOTHER_ANIMAL_APPROACHES = "But another animal approaches...\n"
 PC_INPUT_1 = "1"
 PC_INPUT_2 = "2"
 PC_INPUT_3 = "3"
+PC_INPUT_4 = "4"
 
 # Player response actions
 ACTION_1 = "Roll"
 ACTION_2 = "Hide"
 ACTION_3 = "Jump"
+ACTION_4 = "Duck"
 
 # Player actions menu
 MENU_PLAYER_ACTIONS = (
     "\nPress the number of the response you want to take.\n" +
     PC_INPUT_1 + ". " + ACTION_1 + "\n" +
     PC_INPUT_2 + ". " + ACTION_2 + "\n" +
-    PC_INPUT_3 + ". " + ACTION_3
+    PC_INPUT_3 + ". " + ACTION_3 + "\n" +
+    PC_INPUT_4 + ". " + ACTION_4
 )
 
 # Mutant animal names
 ANIMAL_1 = "Moophant"
 ANIMAL_2 = "Hipposaurus"
 ANIMAL_3 = "Wilderbeast"
+ANIMAL_FLYING_1 = "Preying Razor Wing"
+ANIMAL_WATER_1 = "Slimescale Fish"
 
 # Mutant animal attacks
 ATTACK_1 = "Charge"
 ATTACK_2 = "Stomp"
 ATTACK_3 = "Buck"
+ATTACK_FLYING_1 = "Swoop"
+ATTACK_WATER_1 = "Splash"
+ATTACK_WATER_2 = "Tsunami"

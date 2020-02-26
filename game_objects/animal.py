@@ -10,3 +10,16 @@ class Animal(object):
     def get_attack_random(self):
         attack_random = random.choice(self.attacks)
         return attack_random
+
+
+# Animal subclasses
+class AnimalFlying(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name)
+        self.attacks = lists.animal_attacks_flying
+
+
+class AnimalWater(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name)
+        self.attacks = lists.animal_attacks_water

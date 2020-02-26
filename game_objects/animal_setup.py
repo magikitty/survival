@@ -6,5 +6,11 @@ import utilities.lists as lists
 
 # Instantiates an Animal object with random name from list
 def get_random_animal():
-    animal_random = animal.Animal(random.choice(lists.list_animals))
+    num = random.randint(0, 2)
+    if num == 0:
+        animal_random = animal.Animal(random.choice(lists.list_animals))
+    elif num == 1:
+        animal_random = animal.AnimalWater(random.choice(lists.list_animals_water))
+    else:
+        animal_random = animal.AnimalFlying(random.choice(lists.list_animals_flying))
     return animal_random
