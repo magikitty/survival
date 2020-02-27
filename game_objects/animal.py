@@ -13,6 +13,12 @@ class Animal(object):
 
 
 # Animal subclasses
+class AnimalClaws(Animal):
+    def __init__(self, name):
+        Animal.__init__(self, name)
+        self.attacks = lists.animal_attacks_claws
+
+
 class AnimalFlying(Animal):
     def __init__(self, name):
         Animal.__init__(self, name)
