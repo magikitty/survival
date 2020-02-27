@@ -1,18 +1,18 @@
-import random
-import utilities.constants as constants
 import utilities.lists as lists
+
+import random
 
 
 class Animal(object):
     def __init__(self, name):
         self.name = name
+        # Inherited classes have different attack lists
         self.attacks = lists.animal_attacks
     def get_attack_random(self):
         attack_random = random.choice(self.attacks)
         return attack_random
 
 
-# Animal subclasses
 class AnimalClaws(Animal):
     def __init__(self, name):
         Animal.__init__(self, name)
