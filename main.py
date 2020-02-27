@@ -12,6 +12,7 @@ import json
 
 def welcome_pc():
     print(constants.MESSAGE_WELCOME)
+    print(constants.MESSAGE_GAME_INFO)
     player_setup.set_pc_name_from_input()
     print(constants.MESSAGE_GREET_PC_1, player.Player().name + constants.MESSAGE_GREET_PC_2)
 
