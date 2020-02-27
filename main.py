@@ -1,9 +1,9 @@
 # Import modules
 import game_objects.animal as animal
-import game_objects.animal_setup as animal_setup
+import game_objects.animal_utils as animal_utils
 import game_objects.player as player
 import game_objects.player_action as player_action
-import game_objects.player_setup as player_setup
+import game_objects.player_utils as player_utils
 import utilities.constants as constants
 import utilities.dictionary as dictionary
 
@@ -11,8 +11,9 @@ import utilities.dictionary as dictionary
 def welcome_pc():
     print(constants.MESSAGE_WELCOME)
     print(constants.MESSAGE_GAME_INFO)
-    player_setup.set_pc_name_from_input()
-    print(constants.MESSAGE_GREET_PC_1, player.Player().name + constants.MESSAGE_GREET_PC_2)
+    player_utils.set_pc_name_from_input()
+    print(constants.MESSAGE_GREET_HELLO, player.Player().name +
+    constants.MESSAGE_GREET_GET_READY)
 
 
 def game_loop():
