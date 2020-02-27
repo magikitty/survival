@@ -2,6 +2,9 @@
 MESSAGE_ENTER_NAME = "Enter your name: "
 MESSAGE_INPUT_ACTION = "What do you want to do? "
 
+# Number of points needed to win the game
+POINTS_WIN = 25
+
 # Status messages for player
 MESSAGE_ANIMAL_ATTACK = "The mutant animal attacks with"
 MESSAGE_ANOTHER_ANIMAL_APPROACHES = ">>>>>>> But another animal approaches...\n"
@@ -10,8 +13,14 @@ MESSAGE_GAME_INFO = (
     "Try to survive the mutant animal encounters!\n"
     "Each animal's attack can be survived by responding with the right action.\n"
     "You get 1 point for each animal encounter you survive.\n"
+    "You need to get 25 points to win the game.\n"
     )
 MESSAGE_GAME_OVER = "Game over!"
+MESSAGE_GAME_WON = (
+    "-----------------------------\n"
+    "* CONGRATULATIONS! YOU WON! *\n"
+    "-----------------------------\n"
+    )
 MESSAGE_GREET_PC_1 = "Hello,"
 MESSAGE_GREET_PC_2 = "! Get ready to play!\n"
 MESSAGE_PLAYER_SURVIVED_TRUE = "(^ ^) You survived the mutant animal attack! (^ ^)\n"

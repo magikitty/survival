@@ -7,8 +7,6 @@ import game_objects.player_setup as player_setup
 import utilities.constants as constants
 import utilities.dictionary as dictionary
 
-import json
-
 
 def welcome_pc():
     print(constants.MESSAGE_WELCOME)
@@ -19,7 +17,7 @@ def welcome_pc():
 
 def game_loop():
     pc_is_alive = True
-    while pc_is_alive == True:
+    while pc_is_alive == True and player.Player.points < constants.POINTS_WIN:
         # Get animal for encounter
         animal_in_encounter = animal_setup.get_random_animal()
         # Inform player of instantiated animal
@@ -30,10 +28,12 @@ def game_loop():
 
         if pc_survived_encounter == False:
             pc_is_alive = False
-            print(constants.MESSAGE_GAME_OVER)
-            print(constants.MESSAGE_POINTS_PC, player.Player.points)
+            game_over()
         else:
-            print(constants.MESSAGE_ANOTHER_ANIMAL_APPROACHES)
+            if player.Player.points == constants.POINTS_WIN:
+                game_won()
+            else:
+                print(constants.MESSAGE_ANOTHER_ANIMAL_APPROACHES)
 
 
 # Get animal attack & player action, return whether player survives
@@ -50,6 +50,16 @@ def pc_survives_encounter(animal_encountered):
         pc_survives = False
         print(constants.MESSAGE_PLAYER_SURVIVED_FALSE)
     return pc_survives
+
+
+def game_over():
+    print(constants.MESSAGE_GAME_OVER)
+    print(constants.MESSAGE_POINTS_PC, player.Player.points)
+
+
+def game_won():
+    print(constants.MESSAGE_GAME_WON)
+    print(constants.MESSAGE_POINTS_PC, player.Player.points)
 
 
 welcome_pc()
