@@ -5,14 +5,18 @@ attack_response = {
     constants.ATTACK_1: constants.ACTION_1,
     constants.ATTACK_2: constants.ACTION_2,
     constants.ATTACK_3: constants.ACTION_3,
-    constants.ATTACK_FLYING_1 : constants.ACTION_4,
+    constants.ATTACK_FLYING_1: constants.ACTION_4,
+    constants.ATTACK_FLYING_2: constants.ACTION_5,
+    constants.ATTACK_FLYING_3: constants.ACTION_5,
     constants.ATTACK_WATER_1: constants.ACTION_4,
-    constants.ATTACK_WATER_2: constants.ACTION_2
+    constants.ATTACK_WATER_2: constants.ACTION_2,
+    constants.ATTACK_WATER_3: constants.ACTION_1
     }
 
 player_input_action = {
     constants.PC_INPUT_1: constants.ACTION_1,
     constants.PC_INPUT_2: constants.ACTION_2,
     constants.PC_INPUT_3: constants.ACTION_3,
-    constants.PC_INPUT_4: constants.ACTION_4
+    constants.PC_INPUT_4: constants.ACTION_4,
+    constants.PC_INPUT_5: constants.ACTION_5
 }
