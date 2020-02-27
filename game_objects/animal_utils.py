@@ -1,7 +1,7 @@
 import game_objects.animal as animal
-import random
-import utilities.constants as constants
 import utilities.lists as lists
+
+import random
 
 
 # Instantiates an Animal object with random name from list
