@@ -53,13 +53,8 @@ def pc_survives_encounter(animal_encountered):
     return pc_survives
 
 
-def game_over():
-    print(constants.MESSAGE_GAME_OVER)
-    print(constants.MESSAGE_POINTS_PC, player.Player.points)
-
-
-def game_won():
-    print(constants.MESSAGE_GAME_WON)
+def game_end(message):
+    print(message)
     print(constants.MESSAGE_POINTS_PC, player.Player.points)
 
 
