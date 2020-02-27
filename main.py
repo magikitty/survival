@@ -30,6 +30,7 @@ def game_loop():
         if pc_survived_encounter == False:
             pc_is_alive = False
             print(constants.MESSAGE_GAME_OVER)
+            print(constants.MESSAGE_POINTS_PC, player.Player.points)
         else:
             print(constants.MESSAGE_ANOTHER_ANIMAL_APPROACHES)
 
@@ -42,6 +43,7 @@ def pc_survives_encounter(animal_encountered):
 
     if dictionary.attack_response[attack_animal] == action_pc:
         pc_survives = True
+        player_setup.add_point_pc()
         print(constants.MESSAGE_PLAYER_SURVIVED_TRUE)
     else:
         pc_survives = False
