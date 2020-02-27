@@ -37,15 +37,21 @@ def game_loop():
                 print(constants.MESSAGE_ANOTHER_ANIMAL_APPROACHES)
 
 
-# Get animal attack & player action, return whether player survives
-def pc_survives_encounter(animal_encountered):
+def get_animal_attack(animal_encountered):
     attack_animal = animal_encountered.get_attack_random()
     print(constants.MESSAGE_ANIMAL_ATTACK, attack_animal)
-    action_pc = player_action.set_action_player(player.Player())
+    return attack_animal
 
+
+def get_pc_action():
+    action_pc = player_action.get_action(player.Player())
+    return action_pc
+
+
+def pc_survives_encounter(attack_animal, action_pc):
     if dictionary.attack_response[attack_animal] == action_pc:
         pc_survives = True
-        player_setup.add_point_pc()
+        player_utils.add_point_pc()
         print(constants.MESSAGE_PLAYER_SURVIVED_TRUE)
     else:
         pc_survives = False
