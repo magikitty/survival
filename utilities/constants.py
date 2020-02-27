@@ -1,38 +1,40 @@
-# Player input messages
-MESSAGE_ENTER_NAME = "Enter your name: "
-MESSAGE_INPUT_ACTION = "What do you want to do? "
-
 # Number of points needed to win the game
 POINTS_WIN = 25
 
-# Status messages for player
-MESSAGE_ANIMAL_ATTACK = "The mutant animal attacks with"
-MESSAGE_ANOTHER_ANIMAL_APPROACHES = ">>>>>>> But another animal approaches...\n"
-MESSAGE_ENCOUNTER_ANIMAL_NAME = "approaches! You have encountered a mutant animal!"
+# Info and greeting messages for player
 MESSAGE_GAME_INFO = (
     "Try to survive the mutant animal encounters!\n"
     "Each animal's attack can be survived by responding with the right action.\n"
     "You get 1 point for each animal encounter you survive.\n"
     "You need to get 25 points to win the game.\n"
     )
-MESSAGE_GAME_OVER = "Game over!"
-MESSAGE_GAME_WON = (
-    "-----------------------------\n"
-    "* CONGRATULATIONS! YOU WON! *\n"
-    "-----------------------------\n"
-    )
-MESSAGE_GREET_PC_1 = "Hello,"
-MESSAGE_GREET_PC_2 = "! Get ready to play!\n"
-MESSAGE_PLAYER_SURVIVED_TRUE = "(^ ^) You survived the mutant animal attack! (^ ^)\n"
-MESSAGE_PLAYER_SURVIVED_FALSE = "Oh no, you did not survive the mutant animal attack!\n"
-MESSAGE_POINTS_PC = "Points earned during the game:"
-MESSAGE_SET_ACTION = "You decide to"
+MESSAGE_GREET_HELLO = "Hello,"
+MESSAGE_GREET_GET_READY = "! Get ready to play!\n"
 MESSAGE_WELCOME = (
     "    Welcome to a game of\n"
     "       ------------\n"
     "       * Survival *\n"
     "       ------------\n"
     )
+
+# Status messages for player
+MESSAGE_ANIMAL_ATTACK = "The mutant animal attacks with"
+MESSAGE_ANOTHER_ANIMAL_APPROACHES = ">>>>>>> But another animal approaches...\n"
+MESSAGE_ENCOUNTER_ANIMAL_NAME = "approaches! You have encountered a mutant animal!"
+MESSAGE_GAME_OVER = "Game over!"
+MESSAGE_GAME_WON = (
+    "-----------------------------\n"
+    "* CONGRATULATIONS! YOU WON! *\n"
+    "-----------------------------\n"
+    )
+MESSAGE_PLAYER_SURVIVED_TRUE = "\n(^ ^) You survived the mutant animal attack! (^ ^)\n"
+MESSAGE_PLAYER_SURVIVED_FALSE = "\nOh no, you did not survive the mutant animal attack!\n"
+MESSAGE_POINTS_PC = "Points earned during the game:"
+MESSAGE_PC_ACTION = "You decide to"
+
+# Player input messages
+MESSAGE_ENTER_NAME = "Enter your name: "
+MESSAGE_INPUT_ACTION = "What do you want to do? "
 
 # Player input for actions
 PC_INPUT_1 = "1"
