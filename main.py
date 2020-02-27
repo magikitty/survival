@@ -18,21 +18,20 @@ def welcome_pc():
 
 def game_loop():
     pc_is_alive = True
-    while pc_is_alive == True and player.Player.points < constants.POINTS_WIN:
-        # Get animal for encounter
-        animal_in_encounter = animal_setup.get_random_animal()
-        # Inform player of instantiated animal
-        print(animal_in_encounter.name, constants.MESSAGE_ENCOUNTER_ANIMAL_NAME)
+    while pc_is_alive and player.Player.points < constants.POINTS_WIN:
+        animal_encountered = animal_utils.get_random_animal()
+        print(animal_encountered.name, constants.MESSAGE_ENCOUNTER_ANIMAL_NAME)
 
-        # Get player input, check if survives encounter
-        pc_survived_encounter = pc_survives_encounter(animal_in_encounter)
+        animal_attack = get_animal_attack(animal_encountered)
+        pc_action = get_pc_action()
+        pc_survived_encounter = pc_survives_encounter(animal_attack, pc_action)
 
-        if pc_survived_encounter == False:
+        if not pc_survived_encounter:
             pc_is_alive = False
-            game_over()
+            game_end(constants.MESSAGE_GAME_OVER)
         else:
             if player.Player.points == constants.POINTS_WIN:
-                game_won()
+                game_end(constants.MESSAGE_GAME_WON)
             else:
                 print(constants.MESSAGE_ANOTHER_ANIMAL_APPROACHES)
 
