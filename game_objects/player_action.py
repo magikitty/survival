@@ -2,12 +2,12 @@ import utilities.constants as constants
 import utilities.dictionary as dictionary
 
 
-def set_action_player(player_obj):
+def get_action(player_obj):
     print(constants.MENU_PLAYER_ACTIONS)
     while True:
         action = check_dict_for_input(input(constants.MESSAGE_INPUT_ACTION))
         if action != "":
-            print(constants.MESSAGE_SET_ACTION, action)
+            print(constants.MESSAGE_PC_ACTION, action)
             return action
 
 
