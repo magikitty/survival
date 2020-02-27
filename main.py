@@ -64,5 +64,9 @@ def game_end(message):
     print(constants.MESSAGE_POINTS_PC, player.Player.points)
 
 
-welcome_pc()
-game_loop()
+def game():
+    welcome_pc()
+    game_loop()
+
+
+game()
